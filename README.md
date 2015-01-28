@@ -21,4 +21,10 @@ For SSL:
    }  
 }  
      
+
+CmdLine Notes:       
+     
+rabbitmqctl change_password username password       
+rabbitmqctl set_user_tags username "tags"    
+rabbitmqctl set_permissions -p / username "*" ".*" ".*"         
      
