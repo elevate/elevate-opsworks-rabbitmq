@@ -32,3 +32,8 @@ rabbitmq_user node['rabbitmq_cluster']['user'] do
   permissions ".* .* .*"
   action :set_permissions
 end
+
+rabbitmq_user node['rabbitmq_cluster']['user'] do
+  tag node['rabbitmq_cluster']['user']['tags']
+  action :set_tags
+end
