@@ -34,6 +34,6 @@ rabbitmq_user node['rabbitmq_cluster']['user'] do
 end
 
 rabbitmq_user node['rabbitmq_cluster']['user'] do
-  tag node['rabbitmq_cluster']['user']['tags']
+  tag node['rabbitmq_cluster']['tags']
   action :set_tags
 end
